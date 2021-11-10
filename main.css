@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("http://fonts.cdnfonts.com/css/sansblack");
 @import url("http://fonts.cdnfonts.com/css/tex-gyre-heros");
-@import url("http://fonts.cdnfonts.com/css/days");
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +22,7 @@ body .content {
   margin: 0 auto;
 }
 body .content h1 {
-  font-family: "days", sans-serif;
+  font-family: "Days", sans-serif;
   color: #fff;
   font-size: 40px;
   background-color: rgba(240, 6, 41, 0.6);
@@ -206,7 +205,7 @@ main #rozpis {
   padding: 100px 0;
 }
 main #rozpis h1 {
-  font-family: "days", sans-serif;
+  font-family: "Days", sans-serif;
   color: #000;
   font-size: 45px;
   padding: 15px;
@@ -228,7 +227,7 @@ main #rozpis .content div {
 }
 main #rozpis .content div h4 {
   color: #fff;
-  font-family: "days", sans-serif;
+  font-family: "Days", sans-serif;
   letter-spacing: 2px;
   font-size: 25px;
 }
