@@ -88,7 +88,7 @@ header{
     width: 100%;
     background-color: rgba(0,0,0,0.6);
     margin: 0 auto;
-    padding: 20px 100px;
+    padding: 10px 75px;
     align-items: center;
     justify-content: space-between;
     z-index: 150;
@@ -96,10 +96,13 @@ header{
       display: none;
     }
     .logo{
-      width: 5%;
+      width: 4%;
       z-index: 100;
+      display: flex;
+      align-items: center;
       img{
         width: 100%;
+        height: 100%;
       }
     }
     .links{
@@ -114,28 +117,23 @@ header{
             color: white;
             text-decoration: none;
             font-family: $poppins;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 600;
             text-transform: uppercase;
             position: relative;
           }
           .fb{
-            border: 2px solid #1771E6;
-            padding: 15px;
-            border-radius: 15px;
+            //border: 2px solid #1771E6;
+            padding: 10px 15px;
+            border-radius: 5px;
             display: flex;
             align-items: center;
             transition: 0.5s;
-            i{
-              padding-right: 5px;
-            }
-          }
-          .fb:hover{
-            background: #1771E6;
+            background-color: #1771E6;
           }
           a::after{
             content: "";
-            height: 3px;
+            height: 2px;
             width: 0;
             background-color: white;
             color: white;
@@ -456,10 +454,7 @@ footer{
               padding: 0;
               background: none;
               border: none;
-              color: #649dee;
-              i{
-                display: none;
-              }
+              color: #1771E6;
             }
           }
         }
@@ -536,7 +531,7 @@ footer{
 @media only screen and (max-width: 520px) {
   header{
     nav{
-      padding: 20px 30px;
+      padding: 10px 30px;
       .hamburger{
         i{
           color: #fff;
