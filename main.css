@@ -1,22 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("//db.onlinewebfonts.com/c/3750ae4f553135962d46a5e916204fe5?family=GoodTimesW00-Bold");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("http://fonts.cdnfonts.com/css/sansblack");
-@import url("http://fonts.cdnfonts.com/css/tex-gyre-heros");
+@import url("http://fonts.cdnfonts.com/css/days");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
-body {
-  scroll-behavior: smooth;
-}
 body .content {
   width: 80%;
   margin: 0 auto;
@@ -37,14 +29,14 @@ body .content .sec-content {
   justify-content: space-between;
   align-items: center;
 }
-body .content .sec-content .prgrf {
+body .content .sec-content .paragraph {
   flex-basis: 55%;
   width: 55%;
 }
-body .content .sec-content .prgrf p {
+body .content .sec-content .paragraph p {
   color: #fff;
   background-color: rgba(43, 42, 41, 0.6);
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -80,7 +72,7 @@ body .content .sec-content .table .price h6 {
 
 header {
   height: 100vh;
-  background: url("pexels-victor-freitas-841130.jpg");
+  background: url("img/header-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -97,14 +89,8 @@ header nav {
 header nav .hamburger {
   display: none;
 }
-header nav .logo {
+header nav img {
   width: 5%;
-  display: flex;
-  text-decoration: none;
-  align-content: space-between;
-}
-header nav .logo img {
-  width: 100%;
 }
 header nav .links ul {
   display: flex;
@@ -188,14 +174,19 @@ main #about .item p {
   font-size: 13px;
 }
 main #fitness {
-  background: url("HAMMER STRENGTH.jpg");
+  background: url("img/fitness-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   padding: 80px 0;
 }
+main .transition {
+  width: 100%;
+  height: 10px;
+  background-color: #000;
+}
 main #box {
-  background: url("box.jpg");
+  background: url("img/boxing-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -234,7 +225,7 @@ main #rozpis .content div h4 {
 main #rozpis .content div p {
   color: #fff;
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif, sans-serif;
   font-weight: 700;
   padding-top: 15px;
   font-size: 15px;
@@ -247,23 +238,23 @@ main #rozpis .content div:not(:last-child) {
   margin-right: 30px;
 }
 main #rozpis .content div:nth-child(1) {
-  background: url("thaiboxx.jpg");
+  background: url("img/thaibox.jpg");
   background-size: cover;
   background-position: center;
 }
 main #rozpis .content div:nth-child(2) {
-  background: url("mma.jpg");
+  background: url("img/mma.jpg");
   background-size: cover;
   background-position: center;
 }
 main #rozpis .content div:nth-child(3) {
-  background: url("boxing.jpg");
+  background: url("img/boxing.jpg");
   background-size: cover;
   background-position: center;
 }
 
 footer {
-  background: linear-gradient(rgba(38, 38, 38, 0.8), rgba(38, 38, 38, 0.8)), url("footerlogo.png");
+  background: linear-gradient(rgba(38, 38, 38, 0.8), rgba(38, 38, 38, 0.8)), url("img/footer-bg.png");
   background-size: cover;
   background-position: center;
   padding: 50px 0;
@@ -313,7 +304,6 @@ footer .partners .items {
   padding-top: 25px;
 }
 footer .partners .items a {
-  width: 10%;
   flex-basis: 15%;
   border-radius: 9999px;
 }
@@ -326,10 +316,10 @@ footer .partners .items a:not(:last-child) {
 }
 
 @media only screen and (max-width: 970px) {
-  body .content .sec-content .prgrf {
+  body .content .sec-content .paragraph {
     width: 100%;
   }
-  body .content .sec-content .prgrf p {
+  body .content .sec-content .paragraph p {
     text-align: center;
   }
   body .content .sec-content .table {
@@ -354,7 +344,7 @@ footer .partners .items a:not(:last-child) {
     color: #fff;
     font-size: 40px;
   }
-  header nav .logo {
+  header nav img {
     display: none;
   }
   header nav .links {
@@ -449,6 +439,18 @@ footer .partners .items a:not(:last-child) {
 
   footer .content .where iframe {
     width: 100%;
+  }
+  footer .partners {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  footer .partners .items a {
+    flex-basis: 33%;
+    width: 50%;
+  }
+  footer .partners .items a:not(:last-child) {
+    margin-right: 20px;
   }
 }
 @media only screen and (max-width: 410px) {
