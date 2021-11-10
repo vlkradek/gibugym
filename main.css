@@ -89,8 +89,12 @@ header nav {
 header nav .hamburger {
   display: none;
 }
-header nav img {
+header nav .logo {
   width: 5%;
+  z-index: 100;
+}
+header nav .logo img {
+  width: 100%;
 }
 header nav .links ul {
   display: flex;
@@ -340,12 +344,13 @@ footer .partners .items a:not(:last-child) {
   header nav .hamburger {
     display: initial;
     order: 50;
+    z-index: 100;
   }
   header nav .hamburger i {
     color: #fff;
     font-size: 40px;
   }
-  header nav img {
+  header nav .logo {
     order: 100;
     min-width: 30px;
   }
@@ -353,11 +358,12 @@ footer .partners .items a:not(:last-child) {
     position: absolute;
     top: 0;
     right: 0;
-    width: 250px;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
-    padding-top: 40px;
+    padding-top: 90px;
     transition: 0.5s;
+    z-index: 50;
   }
   header nav .links ul {
     flex-direction: column;
@@ -472,6 +478,12 @@ footer .partners .items a:not(:last-child) {
     margin: 0 auto;
   }
 
+  header nav .links ul {
+    align-items: center;
+  }
+  header nav .links ul li {
+    margin-right: 0;
+  }
   header .enter img {
     width: 80%;
   }

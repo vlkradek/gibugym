@@ -94,8 +94,12 @@ header{
     .hamburger{
       display: none;
     }
-    img{
+    .logo{
       width: 5%;
+      z-index: 100;
+      img{
+        width: 100%;
+      }
     }
     .links{
       ul{
@@ -355,12 +359,13 @@ footer{
       .hamburger{
         display: initial;
         order: 50;
+        z-index: 100;
         i{
           color: #fff;
           font-size: 40px;
         }
       }
-      img{
+      .logo{
         order: 100;
         min-width: 30px;
       }
@@ -368,11 +373,12 @@ footer{
         position: absolute;
         top: 0;
         right: 0;
-        width: 250px;
-        background-color: rgba(0,0,0,0.3);
+        width: 100vw;
+        background-color: rgba(0,0,0,0.5);
         height: 100vh;
-        padding-top: 40px;
+        padding-top: 90px;
         transition: 0.5s;
+        z-index: 50;
         ul{
           flex-direction: column;
           align-items: flex-end;
@@ -528,6 +534,16 @@ footer{
     }
   }
   header{
+    nav{
+      .links{
+        ul{
+          align-items: center;
+          li{
+            margin-right: 0;
+          }
+        }
+      }
+    }
     .enter{
       img{
         width: 80%;
