@@ -224,6 +224,7 @@ main #rozpis .content div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 60px 0;
 }
 main #rozpis .content div h4 {
   color: #fff;
@@ -297,6 +298,8 @@ footer .content .where h3 {
 }
 footer .content .where iframe {
   border-radius: 10px;
+  width: 400px;
+  height: 300px;
 }
 footer .partners {
   margin-top: 50px;
@@ -398,7 +401,6 @@ footer .partners .items a:not(:last-child) {
   main #rozpis .content div {
     flex-basis: 100%;
     margin: 0 0 30px;
-    padding: 30px;
   }
   main #rozpis .content div:not(:last-child) {
     margin-right: 0px;
@@ -428,6 +430,10 @@ footer .partners .items a:not(:last-child) {
   body .content .sec-content .table h6 {
     padding: 12px 30px;
   }
+
+  header .enter img {
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 520px) {
   header nav {
@@ -440,6 +446,10 @@ footer .partners .items a:not(:last-child) {
 
   main #about .item {
     flex-basis: 50%;
+  }
+
+  footer .content .where iframe {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 410px) {
@@ -454,6 +464,10 @@ footer .partners .items a:not(:last-child) {
   }
 }
 @media only screen and (max-width: 400px) {
+  header .enter img {
+    width: 80%;
+  }
+
   main #about .item {
     flex-basis: 100%;
   }

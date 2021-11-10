@@ -232,6 +232,7 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 60px 0;
         h4{
           color: #fff;
           font-family: $days;
@@ -307,6 +308,8 @@ footer{
       }
       iframe{
         border-radius: 10px;
+        width: 400px;
+        height: 300px;
       }
     }
   }
@@ -417,7 +420,6 @@ footer{
         div{
           flex-basis: 100%;
           margin: 0 0 30px;
-          padding: 30px;
         }
         div:not(:last-child){
           margin-right: 0px;
@@ -457,6 +459,13 @@ footer{
       }
     }
   }
+  header{
+    .enter{
+      img{
+        width: 60%;
+      }
+    }
+  }
 }
 @media only screen and (max-width: 520px) {
   header{
@@ -474,6 +483,15 @@ footer{
     #about{
       .item{
         flex-basis: 50%;
+      }
+    }
+  }
+  footer{
+    .content{
+      .where{
+        iframe{
+          width: 100%;
+        }
       }
     }
   }
@@ -498,6 +516,13 @@ footer{
   }
 }
 @media only screen and (max-width: 400px) {
+  header{
+    .enter{
+      img{
+        width: 80%;
+      }
+    }
+  }
   main{
     #about{
       .item{
