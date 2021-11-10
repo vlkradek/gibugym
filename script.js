@@ -1,6 +1,5 @@
 let burger = document.getElementById('burger')
 let navbar = document.getElementById('navbar')
-// let link = document.getElementsByTagName('li')
 
 navbar.style.right = '-100vw';
 burger.innerHTML = '<i class=\'bx bx-menu\' ></i>';
@@ -18,3 +17,14 @@ function closeNavbarClick(){
     navbar.style.right = '-100vw'
     burger.innerHTML = '<i class=\'bx bx-menu\' ></i>';
 }
+
+
+// let counter = 1;
+// setInterval(function(){
+//     document.getElementById('radio' + counter).checked = true;
+//     counter++;
+//     if(counter > 4){
+//         counter = 1;
+//     }
+// }, 4000);
+

@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="slideshow.css">
     <link rel="icon" href="img/logo.png">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <title>Gibu Gym</title>
@@ -22,7 +23,7 @@
         }
         ::-webkit-scrollbar-track{
             background: #F0F0F0;
-            box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+            box-shadow: inset 0 0 0 0 #F0F0F0;
         }
     </style>
 </head>
@@ -38,6 +39,7 @@
                 <li><a href="#fitness" onclick="closeNavbarClick()">fitness</a></li>
                 <li><a href="#box" onclick="closeNavbarClick()">box</a></li>
                 <li><a href="#rozpis" onclick="closeNavbarClick()">rozpis</a></li>
+                <li><a href="#slideshow" onclick="closeNavbarClick()">galerie</a></li>
                 <li><a href="#footer" onclick="closeNavbarClick()">kontakt</a></li>
                 <li><a href="https://www.facebook.com/GIBUGYM" target="_blank" class="fb" onclick="closeNavbarClick()"><i class='bx bxl-facebook'></i>Facebook</a></li>
             </ul>
@@ -173,6 +175,32 @@
             </div>
         </div>
     </section>
+    <hr>
+    <section id="slideshow">
+        <h1>GALERIE</h1>
+        <div class="slider">
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/5.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/10.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/13.jpg" alt="">
+                </div>
+            </div>
+            <span class="right" id="right">
+                <i class='bx bxs-chevron-right'></i>
+            </span>
+            <span class="left" id="left">
+                <i class='bx bxs-chevron-left'></i>
+            </span>
+        </div>
+    </section>
 </main>
 <footer id="footer">
         <div class="content">
@@ -203,5 +231,33 @@
         </div>
     </footer>
 <script src="script.js"></script>
+<script>
+    let counter = 0;
+    let slides = document.getElementById('slides')
+
+
+    let right = document.getElementById('right')
+    let left = document.getElementById('left')
+
+    slides.style.marginLeft = '0'
+
+
+    right.onclick = function(){
+        if(counter < 300){
+            counter = counter + 100;
+        } else if (counter == 300){
+            counter = 0;
+        }
+        slides.style.marginLeft = '-' + counter + '%'
+    }
+    left.onclick = function(){
+        if(counter > 0){
+            counter = counter - 100;
+        } else if (counter == 0){
+            counter = 300;
+        }
+        slides.style.marginLeft = '-' + counter + '%'
+    }
+</script>
 </body>
 </html>

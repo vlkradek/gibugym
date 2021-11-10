@@ -39,7 +39,7 @@ body{
         width: 55%;
         p{
           color: #fff;
-          background-color: rgba(43, 42, 41, 0.6);
+          background-color: rgba(43, 42, 41, 0.7);
           font-family: $inter;
           padding: 10px;
           margin-bottom: 10px;
@@ -91,6 +91,7 @@ header{
     padding: 20px 100px;
     align-items: center;
     justify-content: space-between;
+    z-index: 150;
     .hamburger{
       display: none;
     }
@@ -160,6 +161,10 @@ header{
   }
 }
 main{
+  hr{
+    width: 80%;
+    margin: 0 auto;
+  }
   #about{
     display: flex;
     width: 80%;
@@ -238,7 +243,7 @@ main{
           font-family: $nunito, sans-serif;
           font-weight: 700;
           padding-top: 15px;
-          font-size: 15px;
+          font-size: 18px;
           strong{
             font-size: 20px;
             font-weight: bolder;
@@ -262,6 +267,69 @@ main{
         background: url("img/boxing.jpg");
         background-size: cover;
         background-position: center;
+      }
+    }
+  }
+  #slideshow{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+      font-family: $days;
+      color: #000;
+      font-size: 45px;
+      padding: 15px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .slider {
+      width: 60%;
+      position: relative;
+      overflow: hidden;
+
+      .slides {
+        display: flex;
+        width: 400%;
+        height: 100%;
+        transition: 1s;
+
+        .slide {
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+
+      .left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      .right i,
+      .left i {
+        font-size: 50px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.7);
+        transition: 0.5s;
+      }
+
+      .right i:hover,
+      .left i:hover {
+        color: rgba(255, 255, 255, 0.5)
       }
     }
   }
@@ -421,8 +489,11 @@ footer{
         }
       }
     }
+    #slideshow{
+    }
   }
   footer{
+    background-position: left;
     .content{
       flex-direction: column;
       align-items: center;
@@ -478,6 +549,11 @@ footer{
     #about{
       .item{
         flex-basis: 50%;
+      }
+    }
+    #slideshow{
+      .slider{
+        width: 90%;
       }
     }
   }

@@ -35,7 +35,7 @@ body .content .sec-content .paragraph {
 }
 body .content .sec-content .paragraph p {
   color: #fff;
-  background-color: rgba(43, 42, 41, 0.6);
+  background-color: rgba(43, 42, 41, 0.7);
   font-family: "Inter", sans-serif;
   padding: 10px;
   margin-bottom: 10px;
@@ -85,6 +85,7 @@ header nav {
   padding: 20px 100px;
   align-items: center;
   justify-content: space-between;
+  z-index: 150;
 }
 header nav .hamburger {
   display: none;
@@ -151,6 +152,10 @@ header .enter img {
   width: 40%;
 }
 
+main hr {
+  width: 80%;
+  margin: 0 auto;
+}
 main #about {
   display: flex;
   width: 80%;
@@ -232,7 +237,7 @@ main #rozpis .content div p {
   font-family: "Nunito", sans-serif, sans-serif;
   font-weight: 700;
   padding-top: 15px;
-  font-size: 15px;
+  font-size: 18px;
 }
 main #rozpis .content div p strong {
   font-size: 20px;
@@ -255,6 +260,62 @@ main #rozpis .content div:nth-child(3) {
   background: url("img/boxing.jpg");
   background-size: cover;
   background-position: center;
+}
+main #slideshow {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main #slideshow h1 {
+  font-family: "Days One", sans-serif;
+  color: #000;
+  font-size: 45px;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: center;
+}
+main #slideshow .slider {
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+}
+main #slideshow .slider .slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: 1s;
+}
+main #slideshow .slider .slides .slide {
+  width: 100%;
+}
+main #slideshow .slider .slides .slide img {
+  width: 100%;
+  height: 100%;
+}
+main #slideshow .slider .right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+main #slideshow .slider .left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+main #slideshow .slider .right i,
+main #slideshow .slider .left i {
+  font-size: 50px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s;
+}
+main #slideshow .slider .right i:hover,
+main #slideshow .slider .left i:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 footer {
@@ -402,7 +463,9 @@ footer .partners .items a:not(:last-child) {
   main #rozpis .content div:not(:last-child) {
     margin-right: 0px;
   }
-
+  footer {
+    background-position: left;
+  }
   footer .content {
     flex-direction: column;
     align-items: center;
@@ -443,6 +506,9 @@ footer .partners .items a:not(:last-child) {
 
   main #about .item {
     flex-basis: 50%;
+  }
+  main #slideshow .slider {
+    width: 90%;
   }
 
   footer .content .where iframe {
