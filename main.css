@@ -437,14 +437,6 @@ footer .partners .items a:not(:last-child) {
     color: #fff;
     font-size: 40px;
   }
-  header nav .logo {
-    display: flex;
-    justify-content: center;
-    width: 40px;
-  }
-  header nav .links {
-    display: none;
-  }
 
   main #about .item {
     flex-basis: 50%;
