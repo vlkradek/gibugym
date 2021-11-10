@@ -25,9 +25,9 @@ body{
       font-size: 40px;
       background-color: rgba(240, 6, 41, 0.6);
       padding: 15px;
-      display: inline;
       letter-spacing: 2px;
       font-weight: 600;
+      display: inline;
     }
     .sec-content{
       padding-top: 50px;
@@ -354,13 +354,15 @@ footer{
       justify-content: space-between;
       .hamburger{
         display: initial;
+        order: 50;
         i{
           color: #fff;
           font-size: 40px;
         }
       }
       img{
-        display: none;
+        order: 100;
+        min-width: 30px;
       }
       .links{
         position: absolute;
@@ -517,6 +519,14 @@ footer{
   }
 }
 @media only screen and (max-width: 400px) {
+  body{
+    .content{
+      h1{
+        display: table;
+        margin: 0 auto;
+      }
+    }
+  }
   header{
     .enter{
       img{
@@ -529,6 +539,13 @@ footer{
       .item{
         flex-basis: 100%;
       }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  body{
+    .content{
+      width: 90%;
     }
   }
 }

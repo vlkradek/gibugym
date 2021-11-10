@@ -19,9 +19,9 @@ body .content h1 {
   font-size: 40px;
   background-color: rgba(240, 6, 41, 0.6);
   padding: 15px;
-  display: inline;
   letter-spacing: 2px;
   font-weight: 600;
+  display: inline;
 }
 body .content .sec-content {
   padding-top: 50px;
@@ -339,13 +339,15 @@ footer .partners .items a:not(:last-child) {
   }
   header nav .hamburger {
     display: initial;
+    order: 50;
   }
   header nav .hamburger i {
     color: #fff;
     font-size: 40px;
   }
   header nav img {
-    display: none;
+    order: 100;
+    min-width: 30px;
   }
   header nav .links {
     position: absolute;
@@ -465,11 +467,21 @@ footer .partners .items a:not(:last-child) {
   }
 }
 @media only screen and (max-width: 400px) {
+  body .content h1 {
+    display: table;
+    margin: 0 auto;
+  }
+
   header .enter img {
     width: 80%;
   }
 
   main #about .item {
     flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body .content {
+    width: 90%;
   }
 }
