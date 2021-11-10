@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("//db.onlinewebfonts.com/c/3750ae4f553135962d46a5e916204fe5?family=GoodTimesW00-Bold");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("http://fonts.cdnfonts.com/css/sansblack");
+@import url("http://fonts.cdnfonts.com/css/tex-gyre-heros");
+@import url("http://fonts.cdnfonts.com/css/days");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+body .content {
+  width: 80%;
+  margin: 0 auto;
+}
+body .content h1 {
+  font-family: "days", sans-serif;
+  color: #fff;
+  font-size: 40px;
+  background-color: rgba(240, 6, 41, 0.6);
+  padding: 15px;
+  display: inline;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+body .content .sec-content {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .content .sec-content .prgrf {
+  flex-basis: 55%;
+  width: 55%;
+}
+body .content .sec-content .prgrf p {
+  color: #fff;
+  background-color: rgba(43, 42, 41, 0.6);
+  font-family: Inter;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+body .content .sec-content .table {
+  display: flex;
+  overflow: hidden;
+}
+body .content .sec-content .table h6 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  padding: 12px 30px;
+}
+body .content .sec-content .table h6:not(:last-child) {
+  border-bottom: 0.5px solid #fff;
+}
+body .content .sec-content .table .what {
+  background-color: rgba(240, 6, 41, 0.6);
+  border-radius: 20px 0 0 20px;
+}
+body .content .sec-content .table .what h6 {
+  font-weight: 600;
+}
+body .content .sec-content .table .price {
+  background-color: rgba(106, 101, 92, 0.6);
+  border-radius: 0 20px 20px 0;
+}
+body .content .sec-content .table .price h6 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+header {
+  height: 100vh;
+  background: url("pexels-victor-freitas-841130.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+header nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+  padding: 20px 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .hamburger {
+  display: none;
+}
+header nav .logo {
+  width: 5%;
+  display: flex;
+  text-decoration: none;
+  align-content: space-between;
+}
+header nav .logo img {
+  width: 100%;
+}
+header nav .links ul {
+  display: flex;
+  align-items: center;
+}
+header nav .links ul li {
+  list-style: none;
+  margin-right: 35px;
+  position: relative;
+}
+header nav .links ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+header nav .links ul li .fb {
+  border: 2px solid #1771E6;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+header nav .links ul li .fb i {
+  padding-right: 5px;
+}
+header nav .links ul li .fb:hover {
+  background: #1771E6;
+}
+header nav .links ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: white;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+header nav .links ul li a:not(.fb):hover::after {
+  width: 100%;
+}
+header .enter {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+header .enter img {
+  width: 40%;
+}
+
+main #about {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 75px 0;
+}
+main #about .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  flex-basis: 20%;
+  text-align: center;
+}
+main #about .item i {
+  font-size: 45px;
+  padding-bottom: 5px;
+}
+main #about .item span {
+  font-weight: 600;
+  font-size: 20px;
+}
+main #about .item p {
+  font-size: 13px;
+}
+main #fitness {
+  background: url("HAMMER STRENGTH.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+main #box {
+  background: url("box.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+}
+main #rozpis {
+  padding: 100px 0;
+}
+main #rozpis h1 {
+  font-family: "days", sans-serif;
+  color: #000;
+  font-size: 45px;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: center;
+}
+main #rozpis .content {
+  display: flex;
+  padding-top: 25px;
+}
+main #rozpis .content div {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #rozpis .content div h4 {
+  color: #fff;
+  font-family: "days", sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+main #rozpis .content div p {
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  padding-top: 15px;
+  font-size: 15px;
+}
+main #rozpis .content div p strong {
+  font-size: 20px;
+  font-weight: bolder;
+}
+main #rozpis .content div:not(:last-child) {
+  margin-right: 30px;
+}
+main #rozpis .content div:nth-child(1) {
+  background: url("thaiboxx.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main #rozpis .content div:nth-child(2) {
+  background: url("mma.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main #rozpis .content div:nth-child(3) {
+  background: url("boxing.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background: linear-gradient(rgba(38, 38, 38, 0.8), rgba(38, 38, 38, 0.8)), url("footerlogo.png");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  color: #fff;
+}
+footer .content {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+footer .content .contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .content .contact p {
+  display: flex;
+  align-items: center;
+}
+footer .content .contact p i {
+  padding-right: 10px;
+}
+footer .content .contact p a {
+  color: #fff;
+}
+footer .content .contact address {
+  margin: 30px 0;
+}
+footer .content .where h3 {
+  padding-bottom: 10px;
+}
+footer .content .where iframe {
+  border-radius: 10px;
+}
+footer .partners {
+  margin-top: 50px;
+}
+footer .partners h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+footer .partners .items {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+footer .partners .items a {
+  width: 10%;
+  flex-basis: 15%;
+  border-radius: 9999px;
+}
+footer .partners .items a img {
+  border-radius: 9999px;
+  width: 100%;
+}
+footer .partners .items a:not(:last-child) {
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 970px) {
+  body .content .sec-content .prgrf {
+    width: 100%;
+  }
+  body .content .sec-content .prgrf p {
+    text-align: center;
+  }
+  body .content .sec-content .table {
+    margin: 20px 0;
+  }
+  body .content .sec-content .table h6 {
+    padding: 12px 15px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  header {
+    position: relative;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav .hamburger {
+    display: initial;
+  }
+  header nav .hamburger i {
+    color: #fff;
+    font-size: 40px;
+  }
+  header nav .logo {
+    display: none;
+  }
+  header nav .links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    padding-top: 40px;
+    transition: 0.5s;
+  }
+  header nav .links ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  header nav .links ul li {
+    margin-bottom: 10px;
+  }
+  header nav .links ul li .fb {
+    padding: 0;
+    background: none;
+    border: none;
+    color: #649dee;
+  }
+  header nav .links ul li .fb i {
+    display: none;
+  }
+
+  main #about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main #about .item {
+    flex-basis: 33%;
+    margin-bottom: 25px;
+  }
+  main #rozpis .content {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  main #rozpis .content div {
+    flex-basis: 100%;
+    margin: 0 0 30px;
+    padding: 30px;
+  }
+  main #rozpis .content div:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  footer .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .content .contact {
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  footer .content .contact address {
+    text-align: center;
+  }
+  footer .content .contact .opening-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body .content .sec-content {
+    flex-direction: column;
+  }
+  body .content .sec-content .table h6 {
+    padding: 12px 30px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  header nav {
+    padding: 20px 30px;
+  }
+  header nav .hamburger i {
+    color: #fff;
+    font-size: 40px;
+  }
+  header nav .logo {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+  }
+  header nav .links {
+    display: none;
+  }
+
+  main #about .item {
+    flex-basis: 50%;
+  }
+}
+@media only screen and (max-width: 410px) {
+  body .content .sec-content .table .what {
+    border-radius: 10px 0 0 10px;
+  }
+  body .content .sec-content .table .price {
+    border-radius: 0 10px 10px 0;
+  }
+  body .content .sec-content .table h6 {
+    padding: 12px 5px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  main #about .item {
+    flex-basis: 100%;
+  }
+}
