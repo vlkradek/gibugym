@@ -28,3 +28,11 @@ function closeNavbarClick(){
 //     }
 // }, 4000);
 
+// window.addEventListener("scroll", (e) => {
+//     console.log(window.scrollY)
+//     if(window.scrollY >= window.innerHeight){
+//         document.getElementById('navbar').style.padding = '25px';
+//     } else {
+//         document.getElementById('navbar').style.padding = '0px';
+//     }
+// });

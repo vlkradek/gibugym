@@ -23,7 +23,7 @@ body{
       font-family: $days;
       color: #fff;
       font-size: 40px;
-      background-color: rgba(240, 6, 41, 0.6);
+      background-color: rgba(240, 6, 41, 0.7);
       padding: 15px;
       letter-spacing: 2px;
       font-weight: 600;
@@ -39,7 +39,7 @@ body{
         width: 55%;
         p{
           color: #fff;
-          background-color: rgba(43, 42, 41, 0.7);
+          background-color: rgba(43, 42, 41, 0.8);
           font-family: $inter;
           padding: 10px;
           margin-bottom: 10px;
@@ -59,15 +59,13 @@ body{
           border-bottom: 0.5px solid #fff;
         }
         .what{
-          background-color: rgba(240,6,41,0.6);
-          border-radius: 20px 0 0 20px;
+          background-color: rgba(240,6,41,0.7);
           h6{
             font-weight: 600;
           }
         }
         .price{
-          background-color: rgba(106,101,92,0.6);
-          border-radius: 0 20px 20px 0;
+          background-color: rgba(106,101,92,0.7);
           h6{
             font-weight: 300;
             font-style: italic;
@@ -91,12 +89,12 @@ header{
     padding: 10px 75px;
     align-items: center;
     justify-content: space-between;
-    z-index: 150;
+    z-index: 2;
     .hamburger{
       display: none;
     }
     .logo{
-      width: 4%;
+      width: 3%;
       z-index: 100;
       display: flex;
       align-items: center;
@@ -117,13 +115,11 @@ header{
             color: white;
             text-decoration: none;
             font-family: $poppins;
-            font-size: 17px;
+            font-size: 14px;
             font-weight: 600;
             text-transform: uppercase;
-            position: relative;
           }
           .fb{
-            //border: 2px solid #1771E6;
             padding: 10px 15px;
             border-radius: 5px;
             display: flex;
@@ -149,26 +145,16 @@ header{
       }
     }
   }
-  .enter{
-    display: grid;
-    place-items: center;
-    height: 100%;
-    img{
-      width: 40%;
-    }
-  }
 }
 main{
-  hr{
-    width: 80%;
-    margin: 0 auto;
-  }
   #about{
     display: flex;
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 75px 0;
+    padding: 50px 0;
+    align-items: flex-end;
+    height: 100%;
     .item{
       display: flex;
       flex-direction: column;
@@ -176,6 +162,12 @@ main{
       font-family: $poppins;
       flex-basis: 20%;
       text-align: center;
+      background: rgba(255,255,255,0.5);
+      //background: rgba(0,0,0,0.5);
+      border-radius: 10px;
+      //margin: 20px;
+      //padding: 20px;
+      //color: #fff;
       i{
         font-size: 45px;
         padding-bottom: 5px;
@@ -189,6 +181,11 @@ main{
       }
     }
   }
+
+  hr{
+    width: 80%;
+    margin: 0 auto;
+  }
   #fitness{
     background: url("img/fitness-bg.jpg");
     background-attachment: fixed;
@@ -199,7 +196,7 @@ main{
   .transition{
     width: 100%;
     height: 10px;
-    background-color: #000;
+    background-color: #fff;
   }
   #box{
     background: url("img/boxing-bg.jpg");
@@ -209,67 +206,25 @@ main{
     padding: 100px 0;
   }
   #rozpis{
-    padding: 100px 0;
-    h1{
-      font-family: $days;
-      color: #000;
-      font-size: 45px;
-      padding: 15px;
-      letter-spacing: 2px;
-      font-weight: 600;
-      text-align: center;
-    }
+    background: url("img/2.jpeg");
+    background-size: cover;
+    background-position: top;
+    padding: 50px 0;
     .content{
       display: flex;
-      padding-top: 25px;
+      justify-content: space-around;
+      color: #fff;
+      hr{
+        height: 100%;
+        width: 2px;
+      }
       div{
-        flex-basis: 33%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 60px 0;
-        h4{
-          color: #fff;
-          font-family: $days;
-          letter-spacing: 2px;
-          font-size: 25px;
-        }
-        p{
-          color: #fff;
-          text-align: center;
-          font-family: $nunito, sans-serif;
-          font-weight: 700;
-          padding-top: 15px;
-          font-size: 18px;
-          strong{
-            font-size: 20px;
-            font-weight: bolder;
-          }
-        }
-      }
-      div:not(:last-child){
-        margin-right: 30px;
-      }
-      div:nth-child(1){
-        background: url("img/thaibox.jpg");
-        background-size: cover;
-        background-position: center;
-      }
-      div:nth-child(2){
-        background: url("img/mma.jpg");
-        background-size: cover;
-        background-position: center;
-      }
-      div:nth-child(3){
-        background: url("img/boxing.jpg");
-        background-size: cover;
-        background-position: center;
+        text-align: center;
       }
     }
   }
   #slideshow{
-    padding: 100px 0;
+    padding: 50px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -283,7 +238,7 @@ main{
       text-align: center;
     }
     .slider {
-      width: 60%;
+      width: 50%;
       position: relative;
       overflow: hidden;
 
@@ -336,7 +291,7 @@ footer{
   background: linear-gradient(rgba(38, 38, 38, 0.8), rgb(38, 38, 38, 0.8)) ,url("img/footer-bg.png");
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 100px 0 50px;
   color: #fff;
   .content{
     display: flex;
@@ -361,7 +316,7 @@ footer{
       }
     }
     .where{
-      h3{
+      h2{
         padding-bottom: 10px;
       }
       iframe{
@@ -384,9 +339,12 @@ footer{
       a{
         flex-basis: 15%;
         border-radius: 9999px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
         img{
           border-radius: 9999px;
-          width: 100%;
+          width: 80%;
         }
       }
       a:not(:last-child){
@@ -424,7 +382,6 @@ footer{
       justify-content: space-between;
       .hamburger{
         display: initial;
-        order: 50;
         z-index: 100;
         i{
           color: #fff;
@@ -432,7 +389,6 @@ footer{
         }
       }
       .logo{
-        order: 100;
         min-width: 30px;
       }
       .links{
@@ -443,7 +399,7 @@ footer{
         background-color: rgba(0,0,0,0.5);
         height: 100vh;
         padding-top: 90px;
-        transition: 0.5s;
+        transition: 1s;
         z-index: 50;
         ul{
           flex-direction: column;
@@ -483,8 +439,6 @@ footer{
           margin-right: 0px;
         }
       }
-    }
-    #slideshow{
     }
   }
   footer{
@@ -561,7 +515,7 @@ footer{
       }
     }
     .partners{
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       padding-top: 50px;
       .items{
@@ -570,7 +524,7 @@ footer{
           width: 50%;
         }
         a:not(:last-child){
-          margin-right: 20px;
+          margin-right: 10px;
         }
       }
     }
@@ -581,12 +535,6 @@ footer{
     .content{
       .sec-content{
         .table{
-          .what{
-            border-radius: 10px 0 0 10px;
-          }
-          .price{
-            border-radius: 0 10px 10px 0;
-          }
           h6{
             padding: 12px 5px;
           }
@@ -617,7 +565,13 @@ footer{
     }
     .enter{
       img{
-        width: 80%;
+        width: 50%;
+      }
+      img:first-child{
+        display: none;
+      }
+      img:last-child{
+        display: initial;
       }
     }
   }

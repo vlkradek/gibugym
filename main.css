@@ -17,7 +17,7 @@ body .content h1 {
   font-family: "Days One", sans-serif;
   color: #fff;
   font-size: 40px;
-  background-color: rgba(240, 6, 41, 0.6);
+  background-color: rgba(240, 6, 41, 0.7);
   padding: 15px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -35,7 +35,7 @@ body .content .sec-content .paragraph {
 }
 body .content .sec-content .paragraph p {
   color: #fff;
-  background-color: rgba(43, 42, 41, 0.7);
+  background-color: rgba(43, 42, 41, 0.8);
   font-family: "Inter", sans-serif;
   padding: 10px;
   margin-bottom: 10px;
@@ -55,15 +55,13 @@ body .content .sec-content .table h6:not(:last-child) {
   border-bottom: 0.5px solid #fff;
 }
 body .content .sec-content .table .what {
-  background-color: rgba(240, 6, 41, 0.6);
-  border-radius: 20px 0 0 20px;
+  background-color: rgba(240, 6, 41, 0.7);
 }
 body .content .sec-content .table .what h6 {
   font-weight: 600;
 }
 body .content .sec-content .table .price {
-  background-color: rgba(106, 101, 92, 0.6);
-  border-radius: 0 20px 20px 0;
+  background-color: rgba(106, 101, 92, 0.7);
 }
 body .content .sec-content .table .price h6 {
   font-weight: 300;
@@ -85,13 +83,13 @@ header nav {
   padding: 10px 75px;
   align-items: center;
   justify-content: space-between;
-  z-index: 150;
+  z-index: 2;
 }
 header nav .hamburger {
   display: none;
 }
 header nav .logo {
-  width: 4%;
+  width: 3%;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -113,10 +111,9 @@ header nav .links ul li a {
   color: white;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  position: relative;
 }
 header nav .links ul li .fb {
   padding: 10px 15px;
@@ -140,25 +137,15 @@ header nav .links ul li a::after {
 header nav .links ul li a:not(.fb):hover::after {
   width: 100%;
 }
-header .enter {
-  display: grid;
-  place-items: center;
-  height: 100%;
-}
-header .enter img {
-  width: 40%;
-}
 
-main hr {
-  width: 80%;
-  margin: 0 auto;
-}
 main #about {
   display: flex;
   width: 80%;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 75px 0;
+  padding: 50px 0;
+  align-items: flex-end;
+  height: 100%;
 }
 main #about .item {
   display: flex;
@@ -167,6 +154,8 @@ main #about .item {
   font-family: "Poppins", sans-serif;
   flex-basis: 20%;
   text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 main #about .item i {
   font-size: 45px;
@@ -179,6 +168,10 @@ main #about .item span {
 main #about .item p {
   font-size: 13px;
 }
+main hr {
+  width: 80%;
+  margin: 0 auto;
+}
 main #fitness {
   background: url("img/fitness-bg.jpg");
   background-attachment: fixed;
@@ -189,7 +182,7 @@ main #fitness {
 main .transition {
   width: 100%;
   height: 10px;
-  background-color: #000;
+  background-color: #fff;
 }
 main #box {
   background: url("img/boxing-bg.jpg");
@@ -199,67 +192,25 @@ main #box {
   padding: 100px 0;
 }
 main #rozpis {
-  padding: 100px 0;
-}
-main #rozpis h1 {
-  font-family: "Days One", sans-serif;
-  color: #000;
-  font-size: 45px;
-  padding: 15px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  text-align: center;
+  background: url("img/2.jpeg");
+  background-size: cover;
+  background-position: top;
+  padding: 50px 0;
 }
 main #rozpis .content {
   display: flex;
-  padding-top: 25px;
+  justify-content: space-around;
+  color: #fff;
+}
+main #rozpis .content hr {
+  height: 100%;
+  width: 2px;
 }
 main #rozpis .content div {
-  flex-basis: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 0;
-}
-main #rozpis .content div h4 {
-  color: #fff;
-  font-family: "Days One", sans-serif;
-  letter-spacing: 2px;
-  font-size: 25px;
-}
-main #rozpis .content div p {
-  color: #fff;
   text-align: center;
-  font-family: "Nunito", sans-serif, sans-serif;
-  font-weight: 700;
-  padding-top: 15px;
-  font-size: 18px;
-}
-main #rozpis .content div p strong {
-  font-size: 20px;
-  font-weight: bolder;
-}
-main #rozpis .content div:not(:last-child) {
-  margin-right: 30px;
-}
-main #rozpis .content div:nth-child(1) {
-  background: url("img/thaibox.jpg");
-  background-size: cover;
-  background-position: center;
-}
-main #rozpis .content div:nth-child(2) {
-  background: url("img/mma.jpg");
-  background-size: cover;
-  background-position: center;
-}
-main #rozpis .content div:nth-child(3) {
-  background: url("img/boxing.jpg");
-  background-size: cover;
-  background-position: center;
 }
 main #slideshow {
-  padding: 100px 0;
+  padding: 50px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -274,7 +225,7 @@ main #slideshow h1 {
   text-align: center;
 }
 main #slideshow .slider {
-  width: 60%;
+  width: 50%;
   position: relative;
   overflow: hidden;
 }
@@ -319,7 +270,7 @@ footer {
   background: linear-gradient(rgba(38, 38, 38, 0.8), rgba(38, 38, 38, 0.8)), url("img/footer-bg.png");
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 100px 0 50px;
   color: #fff;
 }
 footer .content {
@@ -345,7 +296,7 @@ footer .content .contact p a {
 footer .content .contact address {
   margin: 30px 0;
 }
-footer .content .where h3 {
+footer .content .where h2 {
   padding-bottom: 10px;
 }
 footer .content .where iframe {
@@ -368,10 +319,13 @@ footer .partners .items {
 footer .partners .items a {
   flex-basis: 15%;
   border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 footer .partners .items a img {
   border-radius: 9999px;
-  width: 100%;
+  width: 80%;
 }
 footer .partners .items a:not(:last-child) {
   margin-right: 40px;
@@ -401,7 +355,6 @@ footer .partners .items a:not(:last-child) {
   }
   header nav .hamburger {
     display: initial;
-    order: 50;
     z-index: 100;
   }
   header nav .hamburger i {
@@ -409,7 +362,6 @@ footer .partners .items a:not(:last-child) {
     font-size: 40px;
   }
   header nav .logo {
-    order: 100;
     min-width: 30px;
   }
   header nav .links {
@@ -420,7 +372,7 @@ footer .partners .items a:not(:last-child) {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     padding-top: 90px;
-    transition: 0.5s;
+    transition: 1s;
     z-index: 50;
   }
   header nav .links ul {
@@ -457,6 +409,7 @@ footer .partners .items a:not(:last-child) {
   main #rozpis .content div:not(:last-child) {
     margin-right: 0px;
   }
+
   footer {
     background-position: left;
   }
@@ -509,7 +462,7 @@ footer .partners .items a:not(:last-child) {
     width: 100%;
   }
   footer .partners {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 50px;
   }
@@ -518,16 +471,10 @@ footer .partners .items a:not(:last-child) {
     width: 50%;
   }
   footer .partners .items a:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 @media only screen and (max-width: 410px) {
-  body .content .sec-content .table .what {
-    border-radius: 10px 0 0 10px;
-  }
-  body .content .sec-content .table .price {
-    border-radius: 0 10px 10px 0;
-  }
   body .content .sec-content .table h6 {
     padding: 12px 5px;
   }
@@ -545,7 +492,13 @@ footer .partners .items a:not(:last-child) {
     margin-right: 0;
   }
   header .enter img {
-    width: 80%;
+    width: 50%;
+  }
+  header .enter img:first-child {
+    display: none;
+  }
+  header .enter img:last-child {
+    display: initial;
   }
 
   main #about .item {
