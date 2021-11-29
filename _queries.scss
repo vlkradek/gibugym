@@ -1,0 +1,260 @@
+
+@media only screen and (max-width: 900px) {
+  body{
+    .content{
+      flex-direction: column;
+      .sec-content{
+        //width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+        h1{
+          text-align: center;
+        }
+        .paragraph{
+          text-align: center;
+          padding-right: 0;
+        }
+      }
+      table{
+        width: 80%;
+      }
+    }
+  }
+  #box{
+    .content{
+      .sec-content{
+        order: 100;
+      }
+    }
+  }
+  main{
+    #fitness,#box{
+      .sec-content{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  header{
+    position: relative;
+    nav{
+      display: flex;
+      justify-content: space-between;
+      .hamburger{
+        display: initial;
+        z-index: 100;
+        i{
+          color: #fff;
+          font-size: 40px;
+        }
+      }
+      .logo{
+        min-width: 30px;
+      }
+      .links{
+        position: absolute;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        background-color: rgba(0,0,0,0.5);
+        height: 100vh;
+        padding-top: 90px;
+        transition: 1s;
+        z-index: 50;
+        ul{
+          flex-direction: column;
+          align-items: flex-end;
+          li{
+            margin-bottom: 10px;
+            .fb{
+              padding: 0;
+              background: none;
+              border: none;
+              color: #1771E6;
+            }
+          }
+        }
+      }
+    }
+  }
+  main{
+    #about{
+      flex-wrap: wrap;
+      justify-content: center;
+      .item{
+        flex-basis: 33%;
+        margin-bottom: 25px;
+      }
+    }
+    #rozpis{
+      .content{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        div{
+          flex-basis: 100%;
+          margin: 0 0 30px;
+        }
+        div:not(:last-child){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  footer{
+    background-position: left;
+    .content{
+      flex-direction: column;
+      align-items: center;
+      .contact{
+        margin-bottom: 50px;
+        align-items: center;
+        address{
+          text-align: center;
+        }
+        .opening-time{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  body{
+    .content{
+      .sec-content{
+        //flex-direction: column;
+        .table{
+          h6{
+            //padding: 12px 30px;
+          }
+        }
+      }
+    }
+  }
+  header{
+    .enter{
+      img{
+        width: 45%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 520px) {
+  header{
+    nav{
+      padding: 10px 30px;
+      .hamburger{
+        i{
+          color: #fff;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  main{
+    #about{
+      .item{
+        flex-basis: 50%;
+      }
+    }
+    #slideshow{
+      .slider{
+        width: 90%;
+      }
+    }
+  }
+  footer{
+    .content{
+      .where{
+        iframe{
+          width: 100%;
+        }
+      }
+    }
+    .partners{
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 50px;
+      .items{
+        a{
+          flex-basis: 33%;
+          width: 50%;
+        }
+        a:not(:last-child){
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 410px) {
+  body{
+    .content{
+      padding: 40px 25px;
+      h1{
+        font-size: 11vw;
+      }
+      table{
+        tbody{
+          tr{
+            th,td{
+              padding: 10px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  body{
+    .content{
+      h1{
+        display: table;
+        margin: 0 auto;
+      }
+    }
+  }
+  header{
+    nav{
+      .links{
+        ul{
+          align-items: center;
+          li{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .enter{
+      img{
+        width: 60%;
+      }
+      img:first-child{
+        display: none;
+      }
+      img:last-child{
+        display: initial;
+      }
+    }
+  }
+  main{
+    #about{
+      .item{
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  body{
+    .content{
+      width: 90%;
+    }
+  }
+}

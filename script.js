@@ -28,11 +28,19 @@ function closeNavbarClick(){
 //     }
 // }, 4000);
 
-// window.addEventListener("scroll", (e) => {
+// window.addEventListener("scroll", function(e)  {
 //     console.log(window.scrollY)
 //     if(window.scrollY >= window.innerHeight){
-//         document.getElementById('navbar').style.padding = '25px';
+//         document.getElementById('nav').style.backgroundColor = 'rgba(0,0,0,0.6)';
 //     } else {
-//         document.getElementById('navbar').style.padding = '0px';
+//         document.getElementById('nav').style.padding = 'rgba(0,0,0,0)';
 //     }
+// });
+
+// function paralax(){
+//     if (window.pageYOffset)
+// }
+
+// window.addEventListener('scroll', function(e) {
+//     console.log(window.pageYOffset);
 // });

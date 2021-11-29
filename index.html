@@ -6,9 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="slideshow.css">
     <link rel="icon" href="img/logo.png">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <title>Gibu Gym</title>
     <style type="text/css">
         ::-webkit-scrollbar{
@@ -27,25 +28,29 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
 <header id="header">
-    <nav>
+    <nav id="nav">
         <a href="#header" class="logo">
             <img src="img/logo.png" alt="">
         </a>
-        <div class="hamburger" id="burger"></div>
-        <div class="links" id="navbar">
+        <div class="hamburger" id="burger">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="links">
             <ul>
                 <li><a href="#fitness" onclick="closeNavbarClick()">fitness</a></li>
                 <li><a href="#box" onclick="closeNavbarClick()">box</a></li>
-                <li><a href="#rozpis" onclick="closeNavbarClick()">rozpis</a></li>
+                <li><a href="#" onclick="closeNavbarClick()">rozpis</a></li>
                 <li><a href="#slideshow" onclick="closeNavbarClick()">galerie</a></li>
                 <li><a href="#footer" onclick="closeNavbarClick()">kontakt</a></li>
                 <li><a href="https://www.facebook.com/GIBUGYM" target="_blank" class="fb" onclick="closeNavbarClick()">Facebook</a></li>
             </ul>
         </div>
     </nav>
-    
+    <div class="enter">
+        <img src="img/without-title.png" alt="">
+    </div>
 </header>
 <main>
     <div id="about">
@@ -78,60 +83,102 @@
 
     <section id="fitness">
         <div class="content">
-            <h1>FITNESS</h1>
             <div class="sec-content">
+                <h1>FITNESS</h1>
                 <div class="paragraph">
                     <p>Přijď si protáhnout svaly do jednoho z nejmodernějších fitness center v Brně!</p>
                     <p>Tuhle posilku si zamiluješ! Ale bacha na to – až ti partner vyčte, že u nás trávíš více času než doma, omluvenky Ti psát nebudeme. Nebo ho vezmi s sebou a v mezičase než odcvičíš jej můžeš odložit na bar, kde si dá výbornou kávu nebo cokoliv z našeho sortimentu.</p>
                 </div>
-                <div class="table">
-                    <div class="what">
-                        <h6>Jednorázový vstup</h6>
-                        <h6>1 měsíc</h6>
-                        <h6>3 měsíce</h6>
-                        <h6>6 měsíců</h6>
-                        <h6>12 měsíců</h6>
-                    </div>
-                    <div class="price">
-                        <h6>150 Kč</h6>
-                        <h6>1 500 Kč</h6>
-                        <h6>4 200 Kč</h6>
-                        <h6>7 800 Kč</h6>
-                        <h6>14 400 Kč</h6>
-                    </div>
-                </div>
             </div>
+            <table>
+                <tbody>
+                <tr>
+                    <th style="font-weight: lighter">&#128170;</th>
+                    <th>Cena</th>
+                </tr>
+
+                <tr>
+                    <td>Jednorázový vstup</td>
+                    <td>150&nbsp;Kč</td>
+                </tr>
+
+                <tr>
+                    <td>1&nbsp;měsíc</td>
+                    <td>1&nbsp;500&nbsp;Kč</td>
+                </tr>
+
+                <tr>
+                    <td>3&nbsp;měsíce</td>
+                    <td>4&nbsp;200&nbsp;Kč</td>
+                </tr>
+
+                <tr>
+                    <td>6&nbsp;měsíců</td>
+                    <td>7&nbsp;800&nbsp;Kč</td>
+                </tr>
+
+
+                <tr>
+                    <td>12&nbsp;měsíců</td>
+                    <td>14&nbsp;400&nbsp;Kč</td>
+                </tr>
+                </tbody>
+            </table>
+
         </div>
     </section>
-    <div class="transition"></div>
+    <div class="transition">
+        <span style="color: #000">píle</span>
+        <hr>
+        <span style="color: #F00629;">touha</span>
+        <hr>
+        <span style="color: #1415FF">vůle</span>
+    </div>
     <section id="box">
         <div class="content">
-            <h1>BOX</h1>
             <div class="sec-content">
-                <div class="table">
-                    <div class="what">
-                        <h6>Skupinová lekce</h6>
-                        <h6>1 měsíc</h6>
-                        <h6>3 měsíce</h6>
-                        <h6>6 měsíců</h6>
-                        <h6>12 měsíců</h6>
-                    </div>
-                    <div class="price">
-                        <h6>200 Kč</h6>
-                        <h6>1 900 Kč</h6>
-                        <h6>5 400 Kč</h6>
-                        <h6>9 990 Kč</h6>
-                        <h6>18 900 Kč</h6>
-                    </div>
-                </div>
+                <h1>BOX</h1>
                 <div class="paragraph">
                     <p>Bojové sporty získávají napříč populací stále více příznivců, velké množství mužů, žen, ale také dětí a juniorů.</p>
                     <p>Jsou různé cíle a motivace, ale u nás nemusíte mít za cíl zápasit. Aniž by Vás někdo nutil zápasit, tak bojové sporty jsou ideální aktivitou pro rozvoj fyzické a duševní síly, pohybové koordinace, odreagování se od každodenních stresů, vypěstování si vlastností jako jsou sebovládání, sebepřekonání, fyzická a duševní vytrvalost a v neposlední řadě se také naučíte sebeobraně, jak se ubránit útočníkovi.</p>
                 </div>
             </div>
+            <table>
+                <tbody>
+                <tr>
+                    <th style="font-weight: lighter">&#128170;</th>
+                    <th>Cena</th>
+                </tr>
+
+                <tr>
+                    <td>Jednorázový vstup</td>
+                    <td>150&nbsp;Kč</td>
+                </tr>
+
+                <tr>
+                    <td>1&nbsp;měsíc</td>
+                    <td>1&nbsp;500&nbsp;Kč</td>
+                </tr>
+
+                <tr>
+                    <td>3&nbsp;měsíce</td>
+                    <td>4&nbsp;200&nbsp;Kč</td>
+                </tr>
+
+                <tr>
+                    <td>6&nbsp;měsíců</td>
+                    <td>7&nbsp;800&nbsp;Kč</td>
+                </tr>
+
+
+                <tr>
+                    <td>12&nbsp;měsíců</td>
+                    <td>14&nbsp;400&nbsp;Kč</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </section>
-    <div class="transition"></div>
 <!--    <section id="rozpis">-->
 <!--        <h1>ROZPIS</h1>-->
 <!--        <div class="content">-->
@@ -177,9 +224,7 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
-    <hr>
     <section id="slideshow">
-        <h1>GALERIE</h1>
         <div class="slider">
             <div class="slides" id="slides">
                 <div class="slide">
@@ -244,7 +289,7 @@
     slides.style.marginLeft = '0'
 
 
-    right.onclick = function(){
+    right.onclick = function goRight(){
         if(counter < 300){
             counter = counter + 100;
         } else if (counter == 300){
@@ -252,7 +297,7 @@
         }
         slides.style.marginLeft = '-' + counter + '%'
     }
-    left.onclick = function(){
+    left.onclick = function goLeft(){
         if(counter > 0){
             counter = counter - 100;
         } else if (counter == 0){

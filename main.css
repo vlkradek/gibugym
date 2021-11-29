@@ -2,76 +2,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body .content {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 body .content h1 {
   font-family: "Days One", sans-serif;
   color: #fff;
-  font-size: 40px;
-  background-color: rgba(240, 6, 41, 0.7);
-  padding: 15px;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
   letter-spacing: 2px;
   font-weight: 600;
-  display: inline;
 }
 body .content .sec-content {
-  padding-top: 50px;
+  order: 100;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-}
-body .content .sec-content .paragraph {
-  flex-basis: 55%;
-  width: 55%;
+  width: 100%;
 }
 body .content .sec-content .paragraph p {
   color: #fff;
-  background-color: rgba(43, 42, 41, 0.8);
   font-family: "Inter", sans-serif;
-  padding: 10px;
   margin-bottom: 10px;
 }
-body .content .sec-content .table {
-  display: flex;
-  overflow: hidden;
+body .content table {
+  order: 200;
 }
-body .content .sec-content .table h6 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-size: 16px;
+body .content table th, body .content table td {
   color: #fff;
-  padding: 12px 30px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 30px;
+  text-align: center;
+  height: 100%;
 }
-body .content .sec-content .table h6:not(:last-child) {
-  border-bottom: 0.5px solid #fff;
+body .content table td:last-child {
+  font-style: italic;
+  font-weight: 300;
 }
-body .content .sec-content .table .what {
+body .content table tr td:first-child, body .content table th:first-child {
   background-color: rgba(240, 6, 41, 0.7);
-}
-body .content .sec-content .table .what h6 {
   font-weight: 600;
 }
-body .content .sec-content .table .price {
+body .content table tr td:last-child, body .content table th:last-child {
   background-color: rgba(106, 101, 92, 0.7);
-}
-body .content .sec-content .table .price h6 {
-  font-weight: 300;
-  font-style: italic;
 }
 
 header {
-  height: 100vh;
-  background: url("img/header-bg.jpg");
-  background-attachment: fixed;
+  height: 50vh;
+  background: url("img/header-bg.jpg") fixed;
   background-size: cover;
 }
 header nav {
@@ -97,6 +91,9 @@ header nav .logo {
 header nav .logo img {
   width: 100%;
   height: 100%;
+}
+header nav .links {
+  transition: 0.5s;
 }
 header nav .links ul {
   display: flex;
@@ -137,13 +134,23 @@ header nav .links ul li a::after {
 header nav .links ul li a:not(.fb):hover::after {
   width: 100%;
 }
+header .enter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .enter img {
+  width: 30%;
+}
 
 main #about {
   display: flex;
   width: 80%;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 30px 0;
   align-items: flex-end;
   height: 100%;
 }
@@ -173,28 +180,48 @@ main hr {
   margin: 0 auto;
 }
 main #fitness {
-  background: url("img/fitness-bg.jpg");
-  background-attachment: fixed;
+  background: url("img/fitness-bg.jpg") fixed center;
   background-size: cover;
-  background-position: center;
   padding: 100px 0;
+}
+main #fitness .sec-content {
+  padding-right: 50px;
 }
 main .transition {
-  width: 100%;
-  height: 10px;
+  width: 80%;
+  margin: 0 auto;
   background-color: #fff;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 30px;
+  font-size: 28px;
+  position: relative;
+}
+main .transition hr {
+  width: 18%;
+  height: 2px;
+  color: white;
+  border: none;
+  background-color: black;
+  border-radius: 9999px;
 }
 main #box {
-  background: url("img/boxing-bg.jpg");
-  background-attachment: fixed;
+  background: url("img/boxing-bg.jpg") fixed center;
   background-size: cover;
-  background-position: center;
   padding: 100px 0;
 }
+main #box .sec-content {
+  order: 300;
+  padding-left: 50px;
+  text-align: right;
+}
 main #rozpis {
-  background: url("img/2.jpeg");
+  background: url("img/2.jpeg") top;
   background-size: cover;
-  background-position: top;
   padding: 50px 0;
 }
 main #rozpis .content {
@@ -214,20 +241,26 @@ main #slideshow {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: #fff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 main #slideshow h1 {
   font-family: "Days One", sans-serif;
-  color: #000;
+  color: #fff;
   font-size: 45px;
   padding: 15px;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
 }
 main #slideshow .slider {
   width: 50%;
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 0px 24px 3px #000000;
 }
 main #slideshow .slider .slides {
   display: flex;
@@ -267,9 +300,8 @@ main #slideshow .slider .left i:hover {
 }
 
 footer {
-  background: linear-gradient(rgba(38, 38, 38, 0.8), rgba(38, 38, 38, 0.8)), url("img/footer-bg.png");
+  background: linear-gradient(rgba(38, 38, 38, 0.8), rgba(38, 38, 38, 0.8)), url("img/footer-bg.png") center;
   background-size: cover;
-  background-position: center;
   padding: 100px 0 50px;
   color: #fff;
 }
@@ -331,18 +363,32 @@ footer .partners .items a:not(:last-child) {
   margin-right: 40px;
 }
 
-@media only screen and (max-width: 970px) {
-  body .content .sec-content .paragraph {
-    width: 100%;
+@media only screen and (max-width: 900px) {
+  body .content {
+    flex-direction: column;
   }
-  body .content .sec-content .paragraph p {
+  body .content .sec-content {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  body .content .sec-content h1 {
     text-align: center;
   }
-  body .content .sec-content .table {
-    margin: 20px 0;
+  body .content .sec-content .paragraph {
+    text-align: center;
+    padding-right: 0;
   }
-  body .content .sec-content .table h6 {
-    padding: 12px 15px;
+  body .content table {
+    width: 80%;
+  }
+
+  #box .content .sec-content {
+    order: 100;
+  }
+
+  main #fitness .sec-content, main #box .sec-content {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -367,7 +413,7 @@ footer .partners .items a:not(:last-child) {
   header nav .links {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -100vw;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
@@ -407,7 +453,7 @@ footer .partners .items a:not(:last-child) {
     margin: 0 0 30px;
   }
   main #rozpis .content div:not(:last-child) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   footer {
@@ -431,15 +477,8 @@ footer .partners .items a:not(:last-child) {
   }
 }
 @media only screen and (max-width: 800px) {
-  body .content .sec-content {
-    flex-direction: column;
-  }
-  body .content .sec-content .table h6 {
-    padding: 12px 30px;
-  }
-
   header .enter img {
-    width: 60%;
+    width: 45%;
   }
 }
 @media only screen and (max-width: 520px) {
@@ -475,8 +514,14 @@ footer .partners .items a:not(:last-child) {
   }
 }
 @media only screen and (max-width: 410px) {
-  body .content .sec-content .table h6 {
-    padding: 12px 5px;
+  body .content {
+    padding: 40px 25px;
+  }
+  body .content h1 {
+    font-size: 11vw;
+  }
+  body .content table tbody tr th, body .content table tbody tr td {
+    padding: 10px 10px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -492,7 +537,7 @@ footer .partners .items a:not(:last-child) {
     margin-right: 0;
   }
   header .enter img {
-    width: 50%;
+    width: 60%;
   }
   header .enter img:first-child {
     display: none;

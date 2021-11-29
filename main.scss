@@ -2,83 +2,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@800;900&display=swap');
 
 $poppins: 'Poppins', sans-serif;
 $inter: 'Inter', sans-serif;
 $days: 'Days One', sans-serif;
 $nunito: 'Nunito', sans-serif;
-
+$work-sans: 'Work Sans', sans-serif;
+$franklin: 'Libre Franklin', sans-serif;
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 body{
   .content{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     h1{
       font-family: $days;
       color: #fff;
-      font-size: 40px;
-      background-color: rgba(240, 6, 41, 0.7);
-      padding: 15px;
+      font-size: 2.5rem;
+      padding-bottom: 10px;
       letter-spacing: 2px;
       font-weight: 600;
-      display: inline;
     }
     .sec-content{
-      padding-top: 50px;
+      order: 100;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: center;
+      width: 100%;
       .paragraph{
-        flex-basis: 55%;
-        width: 55%;
         p{
           color: #fff;
-          background-color: rgba(43, 42, 41, 0.8);
           font-family: $inter;
-          padding: 10px;
           margin-bottom: 10px;
         }
       }
-      .table{
-        display: flex;
-        overflow: hidden;
-        h6{
-          font-family: $poppins;
-          text-align: center;
-          font-size: 16px;
-          color: #fff;
-          padding: 12px 30px;
-        }
-        h6:not(:last-child){
-          border-bottom: 0.5px solid #fff;
-        }
-        .what{
-          background-color: rgba(240,6,41,0.7);
-          h6{
-            font-weight: 600;
-          }
-        }
-        .price{
-          background-color: rgba(106,101,92,0.7);
-          h6{
-            font-weight: 300;
-            font-style: italic;
-          }
-        }
+    }
+    table{
+      order: 200;
+      th,td{
+        color: #fff;
+        font-family: $poppins;
+        padding: 10px 30px;
+        text-align: center;
+        height: 100%;
+      }
+      td:last-child{
+        font-style: italic;
+        font-weight: 300;
+      }
+      tr td:first-child, th:first-child{
+        background-color: rgba(240,6,41,0.7);
+        font-weight: 600;
+      }
+      tr td:last-child, th:last-child{
+        background-color: rgba(106,101,92,0.7);
       }
     }
   }
 }
 header{
-  height: 100vh;
-  background: url("img/header-bg.jpg");
-  background-attachment: fixed;
+  height: 50vh;
+  background: url("img/header-bg.jpg") fixed;
   background-size: cover;
   nav{
     display: flex;
@@ -104,6 +101,7 @@ header{
       }
     }
     .links{
+      transition: 0.5s;
       ul{
         display: flex;
         align-items: center;
@@ -145,6 +143,16 @@ header{
       }
     }
   }
+  .enter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 30%;
+    }
+  }
 }
 main{
   #about{
@@ -152,7 +160,7 @@ main{
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 30px 0;
     align-items: flex-end;
     height: 100%;
     .item{
@@ -163,11 +171,7 @@ main{
       flex-basis: 20%;
       text-align: center;
       background: rgba(255,255,255,0.5);
-      //background: rgba(0,0,0,0.5);
       border-radius: 10px;
-      //margin: 20px;
-      //padding: 20px;
-      //color: #fff;
       i{
         font-size: 45px;
         padding-bottom: 5px;
@@ -187,28 +191,48 @@ main{
     margin: 0 auto;
   }
   #fitness{
-    background: url("img/fitness-bg.jpg");
-    background-attachment: fixed;
+    background: url("img/fitness-bg.jpg") fixed center;
     background-size: cover;
-    background-position: center;
     padding: 100px 0;
+    .sec-content{
+      padding-right: 50px;
+    }
   }
   .transition{
-    width: 100%;
-    height: 10px;
+    width: 80%;
+    margin: 0 auto;
     background-color: #fff;
+    font-family: $work-sans;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 30px;
+    font-size: 28px;
+    position: relative;
+    hr{
+      width: 18%;
+      height: 2px;
+      color: white;
+      border: none;
+      background-color: black;
+      border-radius: 9999px;
+    }
   }
   #box{
-    background: url("img/boxing-bg.jpg");
-    background-attachment: fixed;
+    background: url("img/boxing-bg.jpg") fixed center;
     background-size: cover;
-    background-position: center;
     padding: 100px 0;
+    .sec-content{
+      order: 300;
+      padding-left: 50px;
+      text-align: right;
+    }
   }
   #rozpis{
-    background: url("img/2.jpeg");
+    background: url("img/2.jpeg") top;
     background-size: cover;
-    background-position: top;
     padding: 50px 0;
     .content{
       display: flex;
@@ -228,20 +252,25 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     h1{
       font-family: $days;
-      color: #000;
+      color: #fff;
       font-size: 45px;
       padding: 15px;
       letter-spacing: 2px;
-      font-weight: 600;
+      font-weight: 500;
       text-align: center;
     }
     .slider {
       width: 50%;
       position: relative;
       overflow: hidden;
-
+      border-radius: 15px;
+      box-shadow: 0px 0px 24px 3px #000000;
       .slides {
         display: flex;
         width: 400%;
@@ -288,9 +317,8 @@ main{
   }
 }
 footer{
-  background: linear-gradient(rgba(38, 38, 38, 0.8), rgb(38, 38, 38, 0.8)) ,url("img/footer-bg.png");
+  background: linear-gradient(rgba(38, 38, 38, 0.8), rgb(38, 38, 38, 0.8)) ,url("img/footer-bg.png") center;
   background-size: cover;
-  background-position: center;
   padding: 100px 0 50px;
   color: #fff;
   .content{
@@ -353,240 +381,4 @@ footer{
     }
   }
 }
-
-@media only screen and (max-width: 970px) {
-  body{
-    .content{
-      .sec-content{
-        .paragraph{
-          width: 100%;
-          p{
-            text-align: center;
-          }
-        }
-        .table{
-          margin: 20px 0;
-          h6{
-            padding: 12px 15px;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 850px) {
-  header{
-    position: relative;
-    nav{
-      display: flex;
-      justify-content: space-between;
-      .hamburger{
-        display: initial;
-        z-index: 100;
-        i{
-          color: #fff;
-          font-size: 40px;
-        }
-      }
-      .logo{
-        min-width: 30px;
-      }
-      .links{
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        background-color: rgba(0,0,0,0.5);
-        height: 100vh;
-        padding-top: 90px;
-        transition: 1s;
-        z-index: 50;
-        ul{
-          flex-direction: column;
-          align-items: flex-end;
-          li{
-            margin-bottom: 10px;
-            .fb{
-              padding: 0;
-              background: none;
-              border: none;
-              color: #1771E6;
-            }
-          }
-        }
-      }
-    }
-  }
-  main{
-    #about{
-      flex-wrap: wrap;
-      justify-content: center;
-      .item{
-        flex-basis: 33%;
-        margin-bottom: 25px;
-      }
-    }
-    #rozpis{
-      .content{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        div{
-          flex-basis: 100%;
-          margin: 0 0 30px;
-        }
-        div:not(:last-child){
-          margin-right: 0px;
-        }
-      }
-    }
-  }
-  footer{
-    background-position: left;
-    .content{
-      flex-direction: column;
-      align-items: center;
-      .contact{
-        margin-bottom: 50px;
-        align-items: center;
-        address{
-          text-align: center;
-        }
-        .opening-time{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 800px) {
-  body{
-    .content{
-      .sec-content{
-        flex-direction: column;
-        .table{
-          h6{
-            padding: 12px 30px;
-          }
-        }
-      }
-    }
-  }
-  header{
-    .enter{
-      img{
-        width: 60%;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 520px) {
-  header{
-    nav{
-      padding: 10px 30px;
-      .hamburger{
-        i{
-          color: #fff;
-          font-size: 40px;
-        }
-      }
-    }
-  }
-  main{
-    #about{
-      .item{
-        flex-basis: 50%;
-      }
-    }
-    #slideshow{
-      .slider{
-        width: 90%;
-      }
-    }
-  }
-  footer{
-    .content{
-      .where{
-        iframe{
-          width: 100%;
-        }
-      }
-    }
-    .partners{
-      width: 100%;
-      margin: 0 auto;
-      padding-top: 50px;
-      .items{
-        a{
-          flex-basis: 33%;
-          width: 50%;
-        }
-        a:not(:last-child){
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 410px) {
-  body{
-    .content{
-      .sec-content{
-        .table{
-          h6{
-            padding: 12px 5px;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 400px) {
-  body{
-    .content{
-      h1{
-        display: table;
-        margin: 0 auto;
-      }
-    }
-  }
-  header{
-    nav{
-      .links{
-        ul{
-          align-items: center;
-          li{
-            margin-right: 0;
-          }
-        }
-      }
-    }
-    .enter{
-      img{
-        width: 50%;
-      }
-      img:first-child{
-        display: none;
-      }
-      img:last-child{
-        display: initial;
-      }
-    }
-  }
-  main{
-    #about{
-      .item{
-        flex-basis: 100%;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 400px) {
-  body{
-    .content{
-      width: 90%;
-    }
-  }
-}
+@import "queries";
