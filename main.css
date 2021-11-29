@@ -489,6 +489,9 @@ footer .partners .items a:not(:last-child) {
     color: #fff;
     font-size: 40px;
   }
+  header .enter img {
+    width: 60%;
+  }
 
   main #about .item {
     flex-basis: 50%;
