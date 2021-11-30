@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
@@ -75,7 +76,7 @@ body{
 }
 header{
   height: 50vh;
-  background: url("img/header-bg.jpg") fixed;
+  background: url("../img/header-bg.jpg") fixed;
   background-size: cover;
   nav{
     display: flex;
@@ -191,7 +192,7 @@ main{
     margin: 0 auto;
   }
   #fitness{
-    background: url("img/fitness-bg.jpg") fixed center;
+    background: url("../img/fitness-bg.jpg") fixed center;
     background-size: cover;
     padding: 100px 0;
     .sec-content{
@@ -221,7 +222,7 @@ main{
     }
   }
   #box{
-    background: url("img/boxing-bg.jpg") fixed center;
+    background: url("../img/boxing-bg.jpg") fixed center;
     background-size: cover;
     padding: 100px 0;
     .sec-content{
@@ -231,7 +232,7 @@ main{
     }
   }
   #rozpis{
-    background: url("img/2.jpeg") top;
+    background: url("../img/2.jpeg") top;
     background-size: cover;
     padding: 50px 0;
     .content{
@@ -317,7 +318,7 @@ main{
   }
 }
 footer{
-  background: linear-gradient(rgba(38, 38, 38, 0.8), rgb(38, 38, 38, 0.8)) ,url("img/footer-bg.png") center;
+  background: linear-gradient(rgba(38, 38, 38, 0.8), rgb(38, 38, 38, 0.8)) ,url("../img/footer-bg.png") center;
   background-size: cover;
   padding: 100px 0 50px;
   color: #fff;
