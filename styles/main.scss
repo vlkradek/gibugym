@@ -21,6 +21,20 @@ $franklin: 'Libre Franklin', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 body{
+  .facebook{
+    position: fixed;
+    z-index: 500;
+    bottom: 0;
+    margin: 15px 30px;
+    transition: 0.3s;
+    img{
+      width: 130%;
+      filter: drop-shadow(3px 3px 3px #000);
+    }
+  }
+  .facebook:hover{
+    bottom: 1.5%;
+  }
   .content{
     width: 85%;
     margin: 0 auto;
@@ -119,12 +133,11 @@ header{
             text-transform: uppercase;
           }
           .fb{
-            padding: 10px 15px;
-            border-radius: 5px;
             display: flex;
             align-items: center;
-            transition: 0.5s;
-            background-color: #1771E6;
+            img{
+              width: 80%;
+            }
           }
           a::after{
             content: "";

@@ -13,6 +13,22 @@
   -webkit-font-smoothing: antialiased;
 }
 
+body .facebook {
+  position: fixed;
+  z-index: 500;
+  bottom: 0;
+  margin: 15px 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body .facebook img {
+  width: 130%;
+  -webkit-filter: drop-shadow(3px 3px 3px #000);
+          filter: drop-shadow(3px 3px 3px #000);
+}
+body .facebook:hover {
+  bottom: 1.5%;
+}
 body .content {
   width: 85%;
   margin: 0 auto;
@@ -146,17 +162,15 @@ header nav .links ul li a {
   text-transform: uppercase;
 }
 header nav .links ul li .fb {
-  padding: 10px 15px;
-  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #1771E6;
+}
+header nav .links ul li .fb img {
+  width: 80%;
 }
 header nav .links ul li a::after {
   content: "";
@@ -550,11 +564,13 @@ footer .partners .items a:not(:last-child) {
   header nav .links ul li {
     margin-bottom: 10px;
   }
+  header nav .links ul li a {
+    font-size: 25px;
+  }
   header nav .links ul li .fb {
     padding: 0;
     background: none;
     border: none;
-    color: #1771E6;
   }
 
   main #about {
@@ -628,6 +644,13 @@ footer .partners .items a:not(:last-child) {
   }
 }
 @media only screen and (max-width: 520px) {
+  body .facebook {
+    margin: 15px;
+  }
+  body .facebook img {
+    width: 120%;
+  }
+
   header nav {
     padding: 10px 30px;
   }
